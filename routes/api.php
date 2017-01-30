@@ -38,3 +38,5 @@ Route::get('/test', function(){
 
    return "unsecure";
 });
+
+Route::post('/login', 'LoginController@login');

@@ -14,6 +14,8 @@ class TicketValAPIController extends Controller
 
     }
 
+
+
     public function getEvents()
     {
 
