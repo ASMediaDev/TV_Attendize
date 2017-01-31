@@ -8,7 +8,8 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'TicketVal') }}</title>
+
 
     <!-- Styles -->
     <link href="/css/app.css" rel="stylesheet">
@@ -36,7 +37,11 @@
 
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/') }}">
-                        {{ config('app.name', 'Laravel') }}
+
+                        <div>
+                        <img src="http://laravel.ticketval.de/img/icon-02.png" alt="Icon" style="width: 30px;height: 30px;">
+                        {{ config('app.name', 'TicketVal') }}
+                        </div>
                     </a>
                 </div>
 
