@@ -32,6 +32,8 @@ Route::get('/secured', 'TicketValAPIController@test')->middleware('auth:api');
 
 Route::get('/getEvents', 'TicketValAPIController@getEvents')->middleware('auth:api');
 
+Route::get('/validateToken', 'TokenValidationController@validateToken')->middleware('auth:api');
+
 Route::get('/getAttendees/{eventid}', 'TicketValAPIController@getAttendees')->middleware('auth:api');
 
 Route::get('/test', function(){
